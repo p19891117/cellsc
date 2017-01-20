@@ -15,9 +15,9 @@ import javax.swing.JPanel;
 
 import com.alee.laf.tabbedpane.TabbedPaneStyle;
 import com.alee.laf.tabbedpane.WebTabbedPane;
+import com.tst.qq.utils.Constants;
 
 import feiqq.socket.client.Client;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
 
 /**

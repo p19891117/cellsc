@@ -18,13 +18,14 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
-import feiqq.bean.Message;
+import com.tst.qq.bean.Message;
+import com.tst.qq.utils.Constants;
+import com.tst.qq.utils.StringUtil;
+
 import feiqq.socket.client.Client;
 import feiqq.ui.common.MyOptionPane;
 import feiqq.ui.common.MyScrollBarUI;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
-import feiqq.util.StringUtil;
 import feiqq.util.ValidateUtil;
 
 public class RegisterWindow  extends JDialog {

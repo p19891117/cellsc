@@ -9,8 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import feiqq.bean.Category;
-import feiqq.util.Constants;
+import com.tst.qq.bean.Category;
+import com.tst.qq.utils.Constants;
 
 public class CategoryNode extends DefaultMutableTreeNode {
 	

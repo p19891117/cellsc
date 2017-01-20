@@ -30,9 +30,12 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 
-import feiqq.bean.Category;
-import feiqq.bean.Message;
-import feiqq.bean.User;
+import com.tst.qq.bean.Category;
+import com.tst.qq.bean.Message;
+import com.tst.qq.bean.User;
+import com.tst.qq.utils.Constants;
+import com.tst.qq.utils.StringUtil;
+
 import feiqq.socket.client.Client;
 import feiqq.ui.common.CategoryNode;
 import feiqq.ui.common.Emoticon;
@@ -43,9 +46,7 @@ import feiqq.ui.common.MyTreeUI;
 import feiqq.ui.frame.AddFriendWindow;
 import feiqq.ui.frame.ChatRoom;
 import feiqq.ui.frame.ChatRoomPanel;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
-import feiqq.util.StringUtil;
 
 public class FriendPanel extends JPanel {
 

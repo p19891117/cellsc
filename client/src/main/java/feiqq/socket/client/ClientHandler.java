@@ -1,8 +1,5 @@
 package feiqq.socket.client;
 
-import feiqq.bean.Category;
-import feiqq.bean.Message;
-import feiqq.bean.User;
 import feiqq.thread.FlashThread;
 import feiqq.thread.ShakeThread;
 import feiqq.ui.common.CategoryNode;
@@ -13,11 +10,8 @@ import feiqq.ui.frame.ChatRoom;
 import feiqq.ui.frame.ChatRoomPanel;
 import feiqq.ui.frame.MainWindow;
 import feiqq.ui.friend.FriendNode;
-import feiqq.util.Constants;
-import feiqq.util.JsonUtil;
 import feiqq.util.MusicUtil;
 import feiqq.util.PictureUtil;
-import feiqq.util.StringUtil;
 import io.netty.buffer.ByteBuf;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandler;
@@ -33,6 +27,13 @@ import javax.swing.text.BadLocationException;
 import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
+
+import com.tst.qq.bean.Category;
+import com.tst.qq.bean.Message;
+import com.tst.qq.bean.User;
+import com.tst.qq.utils.Constants;
+import com.tst.qq.utils.JsonUtil;
+import com.tst.qq.utils.StringUtil;
 
 public class ClientHandler implements ChannelInboundHandler {
 

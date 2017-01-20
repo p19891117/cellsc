@@ -9,8 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import feiqq.bean.Group;
-import feiqq.util.Constants;
+import com.tst.qq.bean.Group;
+import com.tst.qq.utils.Constants;
 
 public class GroupNode extends DefaultMutableTreeNode {
 

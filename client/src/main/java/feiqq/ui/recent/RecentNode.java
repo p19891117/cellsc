@@ -9,7 +9,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import feiqq.bean.User;
+import com.tst.qq.bean.User;
 
 public class RecentNode extends DefaultMutableTreeNode {
 

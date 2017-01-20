@@ -1,8 +1,22 @@
 package feiqq.socket.client;
 
-import feiqq.bean.Category;
-import feiqq.bean.Message;
-import feiqq.bean.User;
+import java.awt.TrayIcon;
+import java.net.InetSocketAddress;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Queue;
+
+import javax.swing.JTree;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+
+import com.tst.qq.bean.Category;
+import com.tst.qq.bean.Message;
+import com.tst.qq.bean.User;
+import com.tst.qq.utils.JsonUtil;
+import com.tst.qq.utils.NettyServerCfg;
+
 import feiqq.ui.common.CategoryNode;
 import feiqq.ui.frame.AddFriendWindow;
 import feiqq.ui.frame.ChatRoom;
@@ -11,8 +25,6 @@ import feiqq.ui.frame.LoginWindow;
 import feiqq.ui.frame.MainWindow;
 import feiqq.ui.frame.RegisterWindow;
 import feiqq.ui.friend.FriendNode;
-import feiqq.util.Constants;
-import feiqq.util.JsonUtil;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBufAllocator;
 import io.netty.channel.Channel;
@@ -24,17 +36,6 @@ import io.netty.channel.socket.SocketChannel;
 import io.netty.channel.socket.nio.NioSocketChannel;
 import io.netty.handler.codec.LengthFieldBasedFrameDecoder;
 import io.netty.handler.codec.LengthFieldPrepender;
-
-import java.awt.TrayIcon;
-import java.net.InetSocketAddress;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Queue;
-
-import javax.swing.JTree;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.DefaultTreeModel;
 
 /**
  * Description: 客户端核心，将东西都提到这个类共用，便于管理 <br/>
@@ -100,8 +101,7 @@ public class Client {
 					ch.pipeline().addLast(clientHandler);
 				}
 			});
-			ChannelFuture future = bootstrap.connect(
-					new InetSocketAddress(Constants.SERVER_IP, Constants.SERVER_PORT)).sync();
+			ChannelFuture future = bootstrap.connect(new InetSocketAddress(NettyServerCfg.SERVER_IP, NettyServerCfg.SERVER_PORT)).sync();
 			// TODO 这里为什么加上了sync()方法之后，启动client类的时候会被阻塞住，导致后面的发消息都不行
 			// future.channel().closeFuture().sync();
 			future.channel().closeFuture();

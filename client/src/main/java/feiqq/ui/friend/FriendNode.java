@@ -9,8 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.tree.DefaultMutableTreeNode;
 
-import feiqq.bean.User;
-import feiqq.util.Constants;
+import com.tst.qq.bean.User;
+import com.tst.qq.utils.Constants;
 
 public class FriendNode extends DefaultMutableTreeNode {
 

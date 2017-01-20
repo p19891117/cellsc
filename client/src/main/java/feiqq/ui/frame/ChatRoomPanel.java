@@ -31,16 +31,17 @@ import javax.swing.text.SimpleAttributeSet;
 import javax.swing.text.StyleConstants;
 import javax.swing.text.StyledDocument;
 
-import feiqq.bean.Message;
-import feiqq.bean.User;
+import com.tst.qq.bean.Message;
+import com.tst.qq.bean.User;
+import com.tst.qq.utils.Constants;
+import com.tst.qq.utils.StringUtil;
+
 import feiqq.socket.client.Client;
 import feiqq.ui.common.ChatPic;
 import feiqq.ui.common.Emoticon;
 import feiqq.ui.common.MyOptionPane;
 import feiqq.ui.common.MyScrollBarUI;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
-import feiqq.util.StringUtil;
 
 public class ChatRoomPanel extends JPanel {
 

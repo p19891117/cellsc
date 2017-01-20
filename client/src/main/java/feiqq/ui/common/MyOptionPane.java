@@ -12,7 +12,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
-import feiqq.util.Constants;
+import com.tst.qq.utils.Constants;
+
 import feiqq.util.PictureUtil;
 
 /**

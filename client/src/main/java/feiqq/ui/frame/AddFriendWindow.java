@@ -14,13 +14,14 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
-import feiqq.bean.Message;
-import feiqq.bean.User;
+import com.tst.qq.bean.Message;
+import com.tst.qq.bean.User;
+import com.tst.qq.utils.Constants;
+import com.tst.qq.utils.StringUtil;
+
 import feiqq.socket.client.Client;
 import feiqq.ui.common.MyOptionPane;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
-import feiqq.util.StringUtil;
 
 public class AddFriendWindow extends JDialog {
 

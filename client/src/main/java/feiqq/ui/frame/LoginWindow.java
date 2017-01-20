@@ -27,12 +27,13 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import javax.swing.WindowConstants;
 
-import feiqq.bean.Message;
+import com.tst.qq.bean.Message;
+import com.tst.qq.utils.Constants;
+import com.tst.qq.utils.StringUtil;
+
 import feiqq.socket.client.Client;
 import feiqq.ui.common.MyOptionPane;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
-import feiqq.util.StringUtil;
 
 // TODO 逆天所在JDialog
 public class LoginWindow extends JDialog {

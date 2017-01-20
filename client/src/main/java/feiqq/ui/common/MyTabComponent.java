@@ -7,10 +7,11 @@ import java.awt.event.MouseEvent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import com.tst.qq.utils.Constants;
+
 import feiqq.socket.client.Client;
 import feiqq.ui.frame.ChatRoom;
 import feiqq.ui.frame.ChatRoomPanel;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
 
 public class MyTabComponent extends JPanel {

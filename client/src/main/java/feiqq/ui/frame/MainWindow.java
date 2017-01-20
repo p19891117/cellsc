@@ -28,13 +28,13 @@ import javax.swing.WindowConstants;
 import com.alee.laf.tabbedpane.TabStretchType;
 import com.alee.laf.tabbedpane.TabbedPaneStyle;
 import com.alee.laf.tabbedpane.WebTabbedPane;
+import com.tst.qq.bean.User;
+import com.tst.qq.utils.Constants;
 
-import feiqq.bean.User;
 import feiqq.socket.client.Client;
 import feiqq.ui.friend.FriendPanel;
 import feiqq.ui.group.GroupPanel;
 import feiqq.ui.recent.RecentPanel;
-import feiqq.util.Constants;
 import feiqq.util.PictureUtil;
 
 /**

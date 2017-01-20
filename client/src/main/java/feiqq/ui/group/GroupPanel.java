@@ -9,8 +9,9 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
-import feiqq.bean.Category;
-import feiqq.bean.Group;
+import com.tst.qq.bean.Category;
+import com.tst.qq.bean.Group;
+
 import feiqq.ui.common.CategoryNode;
 import feiqq.ui.common.MyScrollBarUI;
 import feiqq.ui.common.MyTreeUI;
