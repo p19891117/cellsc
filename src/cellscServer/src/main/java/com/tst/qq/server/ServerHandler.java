@@ -139,8 +139,7 @@ public class ServerHandler implements ChannelInboundHandler {
 			map.remove(channel.remoteAddress());
 		}
 		// 普通、抖动
-		if (null != message && Constants.GENRAL_MSG.equals(message.getType()) 
-				|| Constants.SHAKE_MSG.equals(message.getType())) {
+		if (null != message && Constants.GENRAL_MSG.equals(message.getType())  || Constants.SHAKE_MSG.equals(message.getType())) {
 			Message backMsg = new Message();
 			// 对方在线
 			if (null != clientMap.get(message.getReceiverId())) {

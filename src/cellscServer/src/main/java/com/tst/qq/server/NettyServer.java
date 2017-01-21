@@ -4,7 +4,7 @@ import java.net.SocketAddress;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.tst.qq.utils.NettyServerCfg;
+import com.tst.cellsc.common.utils.NettyServerCfg;
 
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.Channel;
@@ -29,10 +29,8 @@ import io.netty.handler.codec.LengthFieldPrepender;
  * @see
  */
 public class NettyServer {
-
 	private Map<SocketAddress, String> map = new HashMap<SocketAddress, String>();
 	private Map<String, Channel> clientMap = new HashMap<String, Channel>();
-
 	public void startServer() {
 		EventLoopGroup bossGroup = new NioEventLoopGroup();
 		EventLoopGroup workerGroup = new NioEventLoopGroup();

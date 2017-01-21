@@ -27,6 +27,10 @@
 			<artifactId>cellscDao</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>com.tst.cellsc</groupId>
+			<artifactId>cellscCommon</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>io.netty</groupId>
 			<artifactId>netty-all</artifactId>
 		</dependency>

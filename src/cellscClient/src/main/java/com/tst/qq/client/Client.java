@@ -11,6 +11,7 @@ import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 
+import com.tst.cellsc.common.utils.NettyServerCfg;
 import com.tst.qq.bean.Category;
 import com.tst.qq.bean.Message;
 import com.tst.qq.bean.User;
@@ -23,7 +24,6 @@ import com.tst.qq.client.ui.frame.MainWindow;
 import com.tst.qq.client.ui.frame.RegisterWindow;
 import com.tst.qq.client.ui.friend.FriendNode;
 import com.tst.qq.utils.JsonUtil;
-import com.tst.qq.utils.NettyServerCfg;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.buffer.ByteBufAllocator;
@@ -106,7 +106,6 @@ public class Client {
 			// future.channel().closeFuture().sync();
 			future.channel().closeFuture();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} finally {
 			workerGroup.shutdownGracefully();
